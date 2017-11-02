@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>We work</title>
+		<title>Новый проект</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -292,32 +292,14 @@
 		</form>
 	</header>
 
-	<!-- Gray heading -->
   <div class="new-project">
   <div class="new-project-wrapper">
   	<form action="/" method="post" class="new_project_form">
       <div class="main-project-info">
-    		<!-- <section class="gray_heading text_centered">
-    			<div class="container">
-    				<h1 class="page_head compact_head">
-    					<input type="text" class="comm_name_change" value="" />
-    					<span class="comm_name_full">Название проекта</span>
-    					<span class="edit_name"></span>
-    				</h1>
-    			</div>
-    		</section> -->
-    		<!-- <div class="buy_form_inner">
-    			<p class="buy_form_head">Бюджет</p>
-    			<select class="select_styler select_for_pay">
-    				<option value="hour">Почасовая оплата</option>
-    				<option value="piece">Сдельная оплата</option>
-    			</select>
-    		</div> -->
         <div class="buy_form_inner input-error" data-error-message="Обязательное поля">
-    			<!-- <p class="buy_form_head">Категория проекта</p> -->
     			<input type="text" class="bordered clone project-name" placeholder="НАЗВАНИЕ ПРОЕКТА" />
     		</div>
-    		<div class="buy_form_inner input-error" data-error-message="Обязательное поля">
+    		<div class="buy_form_inner input-error category_block" data-error-message="Обязательное поля">
           <div class="clone_wrapper category-group">
       			<select class="select_styler clone project-category select_parent" data-index="1">
               <option value="" disabled selected>Выберите категорию проекта</option>
@@ -342,7 +324,15 @@
           </div>
           <div class="clone_trigger_wrapper add-button-wrap">
             <span class="project-select-btn clone clone_trigger new-category">Добавить категорию</span>
+            <button id="myPopover" class="btn_hint" type="button">
+              <img src="http://wework.unicoder.ru/bitrix/templates/main_ru/img/question_blue.png" alt="question">
+              <span class="popover_text">Тестовый текст с подсказкой о поле</span>
+            </button>
           </div>
+          <button id="myPopover" class="btn_hint" type="button">
+            <img src="http://wework.unicoder.ru/bitrix/templates/main_ru/img/question_blue.png" alt="question">
+            <span class="popover_text">Тестовый текст с подсказкой о поле</span>
+          </button>
     		</div>
         <div class="buy_form_inner">
           <div class="project-select-btn project-select-budget-btn">
@@ -364,6 +354,10 @@
 							<option value="евро/ч.">евро/ч.</option>
 						</select>
 					</div>
+          <button id="myPopover" class="btn_hint" type="button">
+            <img src="http://wework.unicoder.ru/bitrix/templates/main_ru/img/question_blue.png" alt="question">
+            <span class="popover_text">Тестовый текст с подсказкой о поле</span>
+          </button>
         </div>
         <div class="buy_form_inner">
           <div class="project-select-btn project-select-attachment-btn">
@@ -379,7 +373,7 @@
 									<input class="hidden_file" id="type_file" type="file" multiple>
 
 							</div>
-							<div class="project-uploaded-files">
+							<!-- <div class="project-uploaded-files">
 									<div class="uploaded-file-item">
 											<img src="http://www.vivesceramica.com/assets/images/p/402D.jpg" alt="">
 											<span>tt.jpg</span>
@@ -400,23 +394,29 @@
 											<span>test121312222.jpg</span>
 											<span class="uploaded-file-close"></span>
 									</div>
-							</div>
+							</div> -->
 					</div>
+          <button id="myPopover" class="btn_hint" type="button">
+            <img src="http://wework.unicoder.ru/bitrix/templates/main_ru/img/question_blue.png" alt="question">
+            <span class="popover_text">Тестовый текст с подсказкой о поле</span>
+          </button>
       </div>
       <div class="buy_form_inner">
           <div class="project-select-btn project-select-profession-btn">
-              <input class="profession-input" type="text" name="" value="" placeholder="Добавить вакансию">
+            Добавить категорию
           </div>
+
           <div class="proffesions-wrapper">
-              <ul class="profession-list">
+            <input class="profession-input" type="text" name="" value="" placeholder="Добавить вакансию">
+              <!-- <ul class="profession-list">
                   <li class="profession-list-item">Дизайнер</li>
                   <li class="profession-list-item">Менеджер</li>
-              </ul>
+              </ul> -->
               <div class="apply-btn-wrapper">
                   <button class="apply-btn">Ок</button>
               </div>
               <div class="project-selected-professions">
-                  <div class="selected-professions-item">
+                  <!-- <div class="selected-professions-item">
                       <span>Дизайнер</span>
                       <span class="selected-professions-close"></span>
                   </div>
@@ -431,9 +431,13 @@
                   <div class="selected-professions-item">
                       <span>Программист</span>
                       <span class="selected-professions-close"></span>
-                  </div>
+                  </div> -->
               </div>
           </div>
+          <button id="myPopover" class="btn_hint" type="button">
+            <img src="http://wework.unicoder.ru/bitrix/templates/main_ru/img/question_blue.png" alt="question">
+            <span class="popover_text">Тестовый текст с подсказкой о поле</span>
+          </button>
       </div>
     		<div class="buy_form_inner mobile-hidden">
     			<input type="submit" value="Опубликовать проект" class="blue_btn" />
