@@ -171,7 +171,7 @@
   height: 19px;
   background-image: url('../img/plus.png');
 }
-.new-project-wrapper .project-select-btn::after {
+/*.new-project-wrapper .project-select-btn::after {
   content: '?';
   position: absolute;
   top: 10px;
@@ -186,7 +186,7 @@
   color: #fff;
   font-family: 'RobotoCondensedLight';
   font-size: 14px;
-}
+}*/
 .new-project-wrapper .buy_form_inner .clone_wrapper,
 .new-project-wrapper .buy_form_inner .clone_trigger_wrapper {
   width: 100%;
@@ -204,6 +204,25 @@
 }
 .new-project-wrapper .project-select-btn.expanded .budget-wrapper {
   display: flex;
+}
+
+.project-select-btn.expanded::after,
+.new-project-wrapper .jq-selectbox.dropdown .jq-selectbox__trigger {
+  transform: rotate(180deg);
+}
+
+.new-project-wrapper .budget-wrapper .payment-type {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: -50px;
+}
+
+.new-project-wrapper .budget-wrapper .currency-type {
+  width: auto;
+}
+
+.new-project-wrapper .budget-wrapper .payment-type .jq-selectbox__select {
+  width: 100%;
 }
 
 .new-project-wrapper .project-select-btn.expanded .attachment-wrapper {
@@ -227,21 +246,15 @@
   left: 0;
   width: 100%;
   z-index: 1;
-  padding: 45px 20px;
+  padding: 20px 35px;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  /*display: none;*/
 }
 
 .new-project-wrapper .budget-wrapper {
   display: none;
   min-height: 242px;
-}
-
-.new-project-wrapper .budget-wrapper input,
-.new-project-wrapper .budget-wrapper select {
-  margin-right: 30px;
 }
 
 .new-project-wrapper .budget-wrapper input,
@@ -279,6 +292,12 @@
 
 .new-project-wrapper .project-select-budget-btn.expanded + .budget-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.new-project-wrapper .budget-wrapper input {
+  margin-right: 10px;
 }
 
 .new-project-wrapper .attachment-wrapper.hidden,
@@ -460,6 +479,16 @@
 
 .selected-professions-close {
   margin-top: 6px;
+}
+
+.project-select-btn::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 12px;
+  width: 10px;
+  height: 10px;
+  background: url(../img/dropdown-arrow-down.png) no-repeat center center;
 }
 
 

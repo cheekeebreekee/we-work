@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/project-form.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 	</head>
 <body>
@@ -317,8 +318,8 @@
     			<input type="text" class="bordered clone project-name" placeholder="НАЗВАНИЕ ПРОЕКТА" />
     		</div>
     		<div class="buy_form_inner input-error" data-error-message="Обязательное поля">
-          <div class="clone_wrapper">
-      			<select class="select_styler clone project-category" data-index="1">
+          <div class="clone_wrapper category-group">
+      			<select class="select_styler clone project-category select_parent" data-index="1">
               <option value="" disabled selected>Выберите категорию проекта</option>
       				<option value="hour">Web-Design</option>
       				<option value="piece">Программирование</option>
@@ -340,7 +341,7 @@
             </span>
           </div>
           <div class="clone_trigger_wrapper add-button-wrap">
-            <span class="project-select-btn clone clone_trigger">Добавить категорию</span>
+            <span class="project-select-btn clone clone_trigger new-category">Добавить категорию</span>
           </div>
     		</div>
         <div class="buy_form_inner">
@@ -348,9 +349,16 @@
             <span>Добавить информация о бюджете</span>
           </div>
 					<div class="project-inner-wrapper budget-wrapper">
-						<span class="project-input-label">Бюджет</span>
-						<input type="text" placeholder="1000" class="bordered min_sibling" />
-						<select class="select_styler" data-pay="hour">
+						<!-- <span class="project-input-label">Бюджет</span> -->
+            <select class="select_styler payment-type" data-pay="hour">
+              <option value="" selected disabled>Тип оплаты</option>
+							<option value="руб./ч.">руб./ч.</option>
+							<option value="долл./ч.">долл./ч.</option>
+							<option value="евро/ч.">евро/ч.</option>
+						</select>
+            <input type="text" placeholder="От" class="bordered min_sibling" />
+            <input type="text" placeholder="До" class="bordered min_sibling" />
+						<select class="select_styler currency-type" data-pay="hour">
 							<option value="руб./ч.">руб./ч.</option>
 							<option value="долл./ч.">долл./ч.</option>
 							<option value="евро/ч.">евро/ч.</option>
@@ -367,7 +375,7 @@
 										<img src="img/project-upload-icon.png" alt="load" class="upload_img" multiple/>
 										Загрузить
 									</label>
-									<button class="apply-btn">Ок</button>
+									<!-- <button class="apply-btn">Ок</button> -->
 									<input class="hidden_file" id="type_file" type="file" multiple>
 
 							</div>

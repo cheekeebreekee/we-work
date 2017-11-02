@@ -27,4 +27,19 @@ $(function() {
     e.preventDefault();
     $('.project-select-attachment-btn').removeClass('expanded');
   });
+  $('.new-category').click(function () {
+    $(this).hide();
+  });
+  // $( ".project-category" ).change(function( event ) {
+  //   var newProjectInput = $(this).parent().clone(true, true);
+  //   console.log(newProjectInput);
+  //   $($(this).parent().parent()).after(newProjectInput);
+  //   $(newProjectInput).find('.jq-selectbox').removeClass('opened').removeClass('chanfed').removeClass('focused');
+  //   $( this ).off( event );
+  // });
+  // $('.project-category option').one('click', function () {
+  //   var newProjectInput = $(this).parent().parent();
+  //   console.log(newProjectInput);
+  //   $(this).parent().parent().insertAfter($(this).parent().parent())
+  // })
 });
