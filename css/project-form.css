@@ -314,7 +314,11 @@
 
 .new-project-wrapper .attachment-wrapper {
   display: none;
-  min-height: 192px;
+  min-height: 80px;
+}
+
+.new-project .alert.error {
+  text-align: center;
 }
 
 .new-project-wrapper .project-select-attachment-btn.expanded + .attachment-wrapper {
@@ -524,6 +528,10 @@
   background: url(../img/dropdown-arrow-down.png) no-repeat center center;
 }
 
+#myPopover .popover_text {
+  z-index: 100;
+}
+
 
 @media (max-width: 1040px) {
   .new-project-wrapper .new_project_form {
@@ -545,6 +553,10 @@
   }
   .new-project-wrapper .secondary-project-info.input-error {
     margin-bottom: 20px;
+  }
+
+  .blue_btn--header {
+    display: none;
   }
 }
 
