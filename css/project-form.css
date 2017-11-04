@@ -177,22 +177,7 @@
   height: 19px;
   background-image: url('../img/project-form-images/plus.png');
 }
-/*.new-project-wrapper .project-select-btn::after {
-  content: '?';
-  position: absolute;
-  top: 10px;
-  right: -40px;
-  width: 19px;
-  height: 19px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #33ccff;
-  border-radius: 50%;
-  color: #fff;
-  font-family: 'RobotoCondensedLight';
-  font-size: 14px;
-}*/
+
 .new-project-wrapper .buy_form_inner .clone_wrapper,
 .new-project-wrapper .buy_form_inner .clone_trigger_wrapper {
   width: 100%;
