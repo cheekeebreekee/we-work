@@ -16,6 +16,7 @@
 
 .new-project-wrapper .main-project-info {
   width: 350px;
+  position: relative;
 }
 
 .new-project-wrapper .project-name {
