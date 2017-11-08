@@ -12,6 +12,7 @@
 .new-project-wrapper .new_project_form {
   display: flex;
   justify-content: space-between;
+  min-height: 540px;
 }
 
 .new-project-wrapper .main-project-info {
@@ -30,6 +31,8 @@
 
 .new-project-wrapper .main-project-info .buy_form_inner:last-of-type {
   margin-bottom: 0;
+  position: absolute;
+    bottom: 0;
 }
 
 .new-project-wrapper .main-project-info input {
