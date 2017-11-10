@@ -15,6 +15,44 @@
   min-height: 540px;
 }
 
+/*body .t_timer {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  width: 135px;
+  right: 98px;
+  padding: 15px 0;
+  z-index: 100;
+  background-color: #273947;
+}
+
+@media (max-width: 1000px) {
+  body .t_timer {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    width: 135px;
+    right: 98px;
+    padding: 15px 0;
+    z-index: 100;
+    background-color: #273947;
+    top: -65px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body .t_timer {
+    color: white;
+  font-size: 15px;
+  position: absolute;
+  width: 135px;
+  right: 98px;
+  padding: 15px 0;
+  z-index: 100;
+  background-color: #273947;
+  }
+}*/
+
 .new-project-wrapper .main-project-info {
   width: 350px;
   position: relative;
@@ -540,6 +578,16 @@
 
   .blue_btn--header {
     display: none;
+  }
+}
+
+.blue_btn--header.hidden {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .blue_btn--header {
+      display: none;
   }
 }
 
