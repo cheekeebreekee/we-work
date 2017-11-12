@@ -547,7 +547,7 @@
   display: none;
 }
 
-/*@media (max-width: 640px) {
+@media (max-width: 640px) {
   .blue_btn--header {
       display: none;
   }
@@ -573,4 +573,4 @@
     padding-left: 30px;
     color: #d6d5d5;
   }
-}*/
+}
