@@ -574,3 +574,19 @@
     color: #d6d5d5;
   }
 }
+
+.new-project-wrapper .secondary-project-info,
+.new-project-wrapper .main-project-info {
+  padding: 2px 0;
+}
+
+.new-project-wrapper .project-select-btn.expanded {
+  border: 1px dashed #00cc99;
+  border-bottom: none;
+}
+
+.new-project-wrapper .project-select-btn.expanded + .project-inner-wrapper,
+.new-project-wrapper .project-select-btn.expanded + .proffesions-wrapper {
+  border: 1px dashed #00cc99;
+  border-top: none;
+}
